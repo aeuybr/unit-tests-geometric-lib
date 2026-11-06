@@ -1,0 +1,197 @@
+test_area (test_circle.CircleTestCase.test_area) ... ok
+test_area_decimal (test_circle.CircleTestCase.test_area_decimal) ... ok
+test_area_negative (test_circle.CircleTestCase.test_area_negative) ... FAIL
+test_area_one (test_circle.CircleTestCase.test_area_one) ... ok
+test_area_string (test_circle.CircleTestCase.test_area_string) ... ok
+test_area_zero (test_circle.CircleTestCase.test_area_zero) ... ok
+test_perimeter (test_circle.CircleTestCase.test_perimeter) ... ok
+test_perimeter_decimal (test_circle.CircleTestCase.test_perimeter_decimal) ... ok
+test_perimeter_negative (test_circle.CircleTestCase.test_perimeter_negative) ... FAIL
+test_perimeter_one (test_circle.CircleTestCase.test_perimeter_one) ... ok
+test_perimeter_string (test_circle.CircleTestCase.test_perimeter_string) ... ok
+test_perimeter_zero (test_circle.CircleTestCase.test_perimeter_zero) ... ok
+test_area (test_rectangle.RectangleTestCase.test_area) ... ok
+test_area_decimal (test_rectangle.RectangleTestCase.test_area_decimal) ... ok
+test_area_equal_sides (test_rectangle.RectangleTestCase.test_area_equal_sides) ... ok
+test_area_negative (test_rectangle.RectangleTestCase.test_area_negative) ... FAIL
+test_area_string (test_rectangle.RectangleTestCase.test_area_string) ... FAIL
+test_area_zero (test_rectangle.RectangleTestCase.test_area_zero) ... ok
+test_perimeter (test_rectangle.RectangleTestCase.test_perimeter) ... FAIL
+test_perimeter_decimal (test_rectangle.RectangleTestCase.test_perimeter_decimal) ... FAIL
+test_perimeter_equal_sides (test_rectangle.RectangleTestCase.test_perimeter_equal_sides) ... FAIL
+test_perimeter_negative (test_rectangle.RectangleTestCase.test_perimeter_negative) ... FAIL
+test_perimeter_string (test_rectangle.RectangleTestCase.test_perimeter_string) ... ok
+test_perimeter_zero (test_rectangle.RectangleTestCase.test_perimeter_zero) ... ok
+test_area (test_square.SquareTestCase.test_area) ... ok
+test_area_decimal (test_square.SquareTestCase.test_area_decimal) ... ok
+test_area_negative (test_square.SquareTestCase.test_area_negative) ... FAIL
+test_area_one (test_square.SquareTestCase.test_area_one) ... ok
+test_area_string (test_square.SquareTestCase.test_area_string) ... ok
+test_area_zero (test_square.SquareTestCase.test_area_zero) ... ok
+test_perimeter (test_square.SquareTestCase.test_perimeter) ... ok
+test_perimeter_decimal (test_square.SquareTestCase.test_perimeter_decimal) ... ok
+test_perimeter_negative (test_square.SquareTestCase.test_perimeter_negative) ... FAIL
+test_perimeter_one (test_square.SquareTestCase.test_perimeter_one) ... ok
+test_perimeter_string (test_square.SquareTestCase.test_perimeter_string) ... FAIL
+test_perimeter_zero (test_square.SquareTestCase.test_perimeter_zero) ... ok
+test_area (test_triangle.TriangleTestCase.test_area) ... ok
+test_area_big (test_triangle.TriangleTestCase.test_area_big) ... FAIL
+test_area_decimal (test_triangle.TriangleTestCase.test_area_decimal) ... FAIL
+test_area_equal_sides (test_triangle.TriangleTestCase.test_area_equal_sides) ... FAIL
+test_area_negative (test_triangle.TriangleTestCase.test_area_negative) ... FAIL
+test_area_string (test_triangle.TriangleTestCase.test_area_string) ... ok
+test_perimeter (test_triangle.TriangleTestCase.test_perimeter) ... ok
+test_perimeter_big (test_triangle.TriangleTestCase.test_perimeter_big) ... ok
+test_perimeter_decimal (test_triangle.TriangleTestCase.test_perimeter_decimal) ... ok
+test_perimeter_equal_sides (test_triangle.TriangleTestCase.test_perimeter_equal_sides) ... ok
+test_perimeter_negative (test_triangle.TriangleTestCase.test_perimeter_negative) ... FAIL
+test_perimeter_string (test_triangle.TriangleTestCase.test_perimeter_string) ... ok
+
+======================================================================
+FAIL: test_area_negative (test_circle.CircleTestCase.test_area_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_circle.py", line 44, in test_area_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative (test_circle.CircleTestCase.test_perimeter_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_circle.py", line 52, in test_perimeter_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_negative (test_rectangle.RectangleTestCase.test_area_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 44, in test_area_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_string (test_rectangle.RectangleTestCase.test_area_string)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 40, in test_area_string
+    with self.assertRaises(TypeError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_perimeter (test_rectangle.RectangleTestCase.test_perimeter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 24, in test_perimeter
+    self.assertEqual(result, 16)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: 8 != 16
+
+======================================================================
+FAIL: test_perimeter_decimal (test_rectangle.RectangleTestCase.test_perimeter_decimal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 36, in test_perimeter_decimal
+    self.assertEqual(result, 13)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: 6.5 != 13
+
+======================================================================
+FAIL: test_perimeter_equal_sides (test_rectangle.RectangleTestCase.test_perimeter_equal_sides)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 32, in test_perimeter_equal_sides
+    self.assertEqual(result, 16)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: 8 != 16
+
+======================================================================
+FAIL: test_perimeter_negative (test_rectangle.RectangleTestCase.test_perimeter_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_rectangle.py", line 52, in test_perimeter_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_negative (test_square.SquareTestCase.test_area_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_square.py", line 44, in test_area_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative (test_square.SquareTestCase.test_perimeter_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_square.py", line 52, in test_perimeter_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_string (test_square.SquareTestCase.test_perimeter_string)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_square.py", line 48, in test_perimeter_string
+    with self.assertRaises(TypeError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_area_big (test_triangle.TriangleTestCase.test_area_big)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_triangle.py", line 12, in test_area_big
+    self.assertEqual(result, 30)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: 15.0 != 30
+
+======================================================================
+FAIL: test_area_decimal (test_triangle.TriangleTestCase.test_area_decimal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_triangle.py", line 20, in test_area_decimal
+    self.assertEqual(result, 1.5)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: 3.0 != 1.5
+
+======================================================================
+FAIL: test_area_equal_sides (test_triangle.TriangleTestCase.test_area_equal_sides)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_triangle.py", line 16, in test_area_equal_sides
+    self.assertAlmostEqual(result, 1.7320508075688772)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3.0 != 1.7320508075688772 within 7 places (1.2679491924311228 difference)
+
+======================================================================
+FAIL: test_area_negative (test_triangle.TriangleTestCase.test_area_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_triangle.py", line 44, in test_area_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative (test_triangle.TriangleTestCase.test_perimeter_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aubrey/Desktop/itmo_stuff/sdt/lab4/test_triangle.py", line 52, in test_perimeter_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.003s
+
+FAILED (failures=16)
