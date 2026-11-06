@@ -106,3 +106,4 @@ python3 -m unittest discover -v
 ## Источники
 - Исходная библиотека: https://github.com/smartiqaorg/geometric_lib
 - Документация unittest: https://docs.python.org/3/library/unittest.html
+- Репозиторий: https://github.com/aeuybr/unit-tests-geometric-lib
