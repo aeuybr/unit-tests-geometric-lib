@@ -1,18 +1,11 @@
-# Unit-тесты геометрических фигур
+# Лабораторная работа 5 — GitHub Actions
 
-Четыре модуля библиотеки, четыре файла тестов и отчёт `REPORT.md`.
+Workflow в `.github/workflows/main.yml` автоматически запускает тесты на Ubuntu и Windows при каждом `push`.
 
-Запуск из папки проекта:
-
-```bash
-python3 -m unittest discover -v
-```
-
-Отдельный модуль:
+Локальный запуск тестов из корня проекта:
 
 ```bash
-python3 -m unittest -v test_circle
+python -m unittest discover -v
 ```
 
-В 34 методах проверяются 326 наборов данных.
-Результат: 179 проверок прошли, 147 провалились.
+Подробности и результаты приведены в [REPORT.md](REPORT.md) и [report_lab5.pdf](report_lab5.pdf).
