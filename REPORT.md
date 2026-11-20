@@ -24,7 +24,7 @@ python -m unittest discover -v
 
 ### Результат
 
-Локальный запуск `python3 -m unittest discover -v` завершился успешно: все 34 тестовых метода выполнены, статус — `OK`. Результат автоматического запуска на GitHub Actions приведён на скриншоте в конце отчёта.
+Локальный запуск `python3 -m unittest discover -v` завершился успешно: все 34 тестовых метода выполнены, статус — `OK`. На GitHub Actions workflow завершился успешно на обоих runner'ах. [Запуск № 2 в ветке `lab5`](https://github.com/aeuybr/unit-tests-geometric-lib/actions/runs/44549526103).
 
 ### Вывод
 
